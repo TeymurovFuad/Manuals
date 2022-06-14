@@ -1,0 +1,33 @@
+{
+  "platformName": "Android",
+  "appium:platformVersion": "9",
+  "appium:deviceName": "emulator-5554",
+  "appium:appPAckage": "com.android.contacts",
+  "appium:appActivity": "com.android.contacts.activities.PeopleActivity",
+  "appium:Timeout": "300000"
+Ho to use Appium and UiAtomatorViewer
+
+1) Install Appium server and Appium inspector
+2) Open appium server -> Edit configurations, and fill the fields with pathes to the required folders
+3) Open Appium inspector and fill desired capabilities as in example below
+{
+  "platformName": "Android",
+  "appium:platformVersion": "9",
+  "appium:deviceName": "emulator-5554",
+  "appium:appPAckage": "com.android.calculator2",
+  "appium:appActivity": "com.android.calculator2.Ca  lculator",
+  "appium:Timeout": "300000"
+}
+
+To find deviceName run command adb devices
+To find appPackage run adb shell -> pm list packages | grep -E -i "short name of application like calc for calculator" or
+Just donwload App Info application and find application of which package and activity name you want to get.
+
+4) Click start session
+
+To use UiAtomatorViewer
+
+1) Go to directory -> C:\******\Android\android-sdk\tools\bin
+2) Run uiautomatorviewer.bat
+3) Go to screen on device you wan to get data
+4) Click "Device Screenshot (uiatomatorviewer dump)" on UIAutomatorViewer app and save it somewhere easily accessible
