@@ -31,3 +31,4 @@ To use UiAtomatorViewer
 2) Run uiautomatorviewer.bat
 3) Go to screen on device you wan to get data
 4) Click "Device Screenshot (uiatomatorviewer dump)" on UIAutomatorViewer app and save it somewhere easily accessible
+5) Use ids from this file for automation
